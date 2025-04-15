@@ -22,7 +22,7 @@ int main()
 	vector.push_back(4);
 	vector.push_back(5);
 
-	if (easyfind(vector, 5) == 0)
+	if (easyfind(vector, 3) == 0)
 		std::cout << "Number 3 found" << std::endl;
 	else
 		std::cout << "Number 3 not found" << std::endl;
@@ -59,7 +59,8 @@ int main()
 		std::cout << "Number 9 not found" << std::endl;
 
 	std::list<int>::iterator it = list.begin();
-	while (it != list.end()) {
+	while (it != list.end())
+	{
 		std::cout << *it << " ";
 		++it;
 	}
