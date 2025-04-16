@@ -87,6 +87,20 @@ int	Span::shortestSpan()
 	return (span);
 }
 
+Span& Span::operator=( const Span& before )
+{
+	std::cout << "Copy Assigment Operator called" << std::endl;
+	this->maxInts = before.maxInts;
+	this->vector = before.vector;
+	return (*this);
+}
+
+Span::Span( const Span& before )
+{
+	std::cout << "Copy Constructor called" << std::endl;
+	*this = before;
+}
+
 Span::Span( unsigned int n )
 {
 	std::cout << "Span Constructor called" << std::endl;

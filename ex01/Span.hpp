@@ -43,7 +43,8 @@ class Span
 		void	addNumber( int i );
 		int		longestSpan();
 		int		shortestSpan();
+		Span& operator=( const Span& before );
+		Span( const Span& before );
 		Span( unsigned int n );
-//!!!!!!!!!!!!!!!!!!!!!!		Span( void );
 		~Span();
 };
